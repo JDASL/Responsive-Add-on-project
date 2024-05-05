@@ -8,6 +8,16 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/bg.png");
@@ -48,7 +58,7 @@ header a {
   line-height: 1.5;
 
   text-align: center;
-  color: rgba(255, 191, 0, 0.907);
+  color: #6f4d22;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
@@ -60,7 +70,54 @@ header a {
   border-radius: 30px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/footer.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-family: "Playfair Display", sans-serif;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.99px;
+}
+
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 10px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+.footer-about-me {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
