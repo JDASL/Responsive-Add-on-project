@@ -103,11 +103,13 @@ footer ul {
 
 footer li {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
 
 footer a {
+  text-decoration: none;
   color: white;
   opacity: 0.7;
 }
