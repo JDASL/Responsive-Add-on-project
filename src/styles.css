@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -24,10 +28,60 @@ body {
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
+
+.grid-3-columns-section-2 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+
+.card p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.card li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  padding: 16px 32px 16px 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  text-align: center;
+  opacity: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f87426;
+  color: black;
+}
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: rgb(42, 44, 43);
 }
 
 header {
@@ -106,6 +160,24 @@ main h3 {
   line-height: 63.98px;
   text-align: left;
   margin: 0;
+}
+
+main h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+}
+
+main h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  text-align: left;
 }
 
 main p {
