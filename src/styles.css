@@ -18,7 +18,8 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
@@ -33,10 +34,19 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .card {
   background-color: rgb(0, 0, 0);
   color: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 .card-body {
   padding: 30px;
@@ -85,7 +95,7 @@ section {
 }
 
 section.secondary {
-  background-color: rgb(42, 44, 43);
+  background-color: rgb(33, 25, 18);
 }
 
 header {
@@ -263,5 +273,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
